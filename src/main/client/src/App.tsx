@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { env } from './env';
+import Dictaphone from './components/Dictaphone';
 
 function App() {
   useEffect(() => {
@@ -8,7 +9,12 @@ function App() {
       .then(response => response.text())
       .then(body => console.log(body));
   }, []);
-  return <Link to='/cake'>Visit /cake</Link>
+  return (
+    <div>
+      <Link to='/cake'>Visit /cake</Link>
+      <Dictaphone />
+    </div>
+  )
 }
 
 export default App
