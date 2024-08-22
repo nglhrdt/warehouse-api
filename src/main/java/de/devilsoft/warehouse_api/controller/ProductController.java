@@ -9,7 +9,7 @@ import de.devilsoft.warehouse_api.entity.Product;
 import de.devilsoft.warehouse_api.service.ProductService;
 
 @RestController
-@RequestMapping("/products")
+@RequestMapping("/api/products")
 public class ProductController {
 
     @Autowired

@@ -11,7 +11,7 @@ import de.devilsoft.warehouse_api.request.WarehouseTransactionRequest;
 import de.devilsoft.warehouse_api.service.WarehouseService;
 
 @RestController
-@RequestMapping("/warehouse")
+@RequestMapping("/api/warehouse")
 public class WarehouseController {
 
     @Autowired

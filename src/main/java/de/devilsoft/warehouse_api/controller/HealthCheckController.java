@@ -12,7 +12,7 @@ import de.devilsoft.warehouse_api.response.HealthCheckResponse;
 import de.devilsoft.warehouse_api.service.DatabaseHealthCheckService;
 
 @RestController
-@RequestMapping("/health-check")
+@RequestMapping("/api/health-check")
 public class HealthCheckController {
 
     @Autowired

@@ -9,7 +9,7 @@ import de.devilsoft.warehouse_api.entity.StorageUnit;
 import de.devilsoft.warehouse_api.service.StorageUnitService;
 
 @RestController
-@RequestMapping("/storage-units")
+@RequestMapping("/api/storage-units")
 public class StorageUnitController {
 
     @Autowired

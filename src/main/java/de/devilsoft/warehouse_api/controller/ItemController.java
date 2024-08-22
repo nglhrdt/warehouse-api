@@ -9,7 +9,7 @@ import de.devilsoft.warehouse_api.entity.Item;
 import de.devilsoft.warehouse_api.service.ItemService;
 
 @RestController
-@RequestMapping("/items")
+@RequestMapping("/api/items")
 public class ItemController {
 
     @Autowired
