@@ -1,17 +1,13 @@
-import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { env } from './env';
 import Dictaphone from './components/Dictaphone';
+import ProductList from './components/ProductList';
 
 function App() {
-  useEffect(() => {
-    fetch(`${env.API_BASE_URL}/health-check`)
-      .then(response => response.text())
-      .then(body => console.log(body));
-  }, []);
   return (
-    <div>
-      <Link to='/cake'>Visit /cake</Link>
+    <div className="flex flex-col gap-4"> 
+      <h1 className="text-3xl font-bold underline">
+        Hello world!
+      </h1>
+      <ProductList />
       <Dictaphone />
     </div>
   )

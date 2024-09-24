@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
+import { Button } from '@/components/ui/button';
 
 const Dictaphone = () => {
     const [message, setMessage] = useState('')
@@ -57,11 +58,11 @@ const Dictaphone = () => {
     }
 
     return (
-        <div>
+        <div className='flex gap-4'>
             <p>Microphone: {listening ? 'on' : 'off'}</p>
-            <button onClick={() => SpeechRecognition.startListening({ language: "de-DE" })}>Start</button>
-            <button onClick={SpeechRecognition.stopListening}>Stop</button>
-            <button onClick={resetTranscript}>Reset</button>
+            <Button onClick={() => SpeechRecognition.startListening({ language: "de-DE" })}>Start</Button>
+            <Button onClick={SpeechRecognition.stopListening}>Stop</Button>
+            <Button onClick={resetTranscript}>Reset</Button>
             <p>{transcript}</p>
             <p>{message}</p>
         </div>
